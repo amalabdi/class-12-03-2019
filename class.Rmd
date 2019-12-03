@@ -1,0 +1,18 @@
+---
+title: "Class"
+author: "Amal Abdi"
+date: "12/3/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(memer)
+```
+
+```{r}
+ourmeme <- meme_get("CondescendingWonka") %>% 
+  meme_text_top("Have you ever thought", size = 30) %>% 
+  meme_text_bottom("about doing the readings?", size = 30)
+```
+
